@@ -89,7 +89,7 @@
                 new Chat()
             )
         ),
-        8080,
+        3000,
     );
 
     echo "WebSocket Server running at wss://64.227.46.189:3000\n";

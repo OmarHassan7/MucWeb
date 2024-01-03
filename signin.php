@@ -15,7 +15,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 
     // Database connection details
-    $servername =$config['DB_HOST'];
+    $servername = $config['DB_HOST'];
     $username = $config['DB_USER'];
     $password_db = $config['DB_PASSWORD'];
     $dbname =  $config['DB_NAME'];

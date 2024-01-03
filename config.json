@@ -2,7 +2,7 @@
   "SOCKET_PORT": "3000",
   "SOCKET_PROTOCOL": "ws",
   "DB_HOST": "localhost",
-  "DB_USER": "root",
-  "DB_PASSWORD": "",
+  "DB_USER": "admin1",
+  "DB_PASSWORD": "admin1",
   "DB_NAME": "sharkawi_muc"
 }
