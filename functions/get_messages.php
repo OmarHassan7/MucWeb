@@ -1,9 +1,9 @@
 <?php
-$configFile = __DIR__ . '../../config.json';
+$configFile = __DIR__ . '/../config.json';
 $config = json_decode(file_get_contents($configFile), true);
 // Establish a database connection (replace with your database credentials)
 
-$mysqli = new mysqli($config['DB_HOST'], $config['DB_USER'],$config['DB_PASSWORD'], $config['DB_NAME']);
+$mysqli = new mysqli($config['DB_HOST'], $config['DB_USER'], $config['DB_PASSWORD'], $config['DB_NAME']);
 // Check connection
 if ($mysqli->connect_error) {
     die("Connection failed: " . $mysqli->connect_error);

@@ -1,7 +1,4 @@
 <?php
-$configFile = __DIR__ . '../../config.json';
-$config = json_decode(file_get_contents($configFile), true);
-
 // Assuming you have a database connection established, replace the placeholders accordingly
 
 // Get the raw POST data
@@ -31,8 +28,10 @@ if (!empty($data)) {
 
 function createParticipantRow($participantsData)
 {
+  $configFile = __DIR__ . '/../config.json';
+  $config = json_decode(file_get_contents($configFile), true);
   // Database connection details
-  $conn = new mysqli($config['DB_HOST'], $config['DB_USER'],$config['DB_PASSWORD'], $config['DB_NAME']);
+  $conn = new mysqli($config['DB_HOST'], $config['DB_USER'], $config['DB_PASSWORD'], $config['DB_NAME']);
 
 
   // Check connection

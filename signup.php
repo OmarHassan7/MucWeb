@@ -1,5 +1,5 @@
 <?php
-$configFile = __DIR__ . '../../config.json';
+$configFile = __DIR__ . '/config.json';
 $config = json_decode(file_get_contents($configFile), true);
 
 function checkPasswordStrength($pass)
@@ -51,7 +51,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 
     // Database connection details
-    $servername =$config['DB_HOST'];
+    $servername = $config['DB_HOST'];
     $username = $config['DB_USER'];
     $password = $config['DB_PASSWORD'];
     $dbname =  $config['DB_NAME'];

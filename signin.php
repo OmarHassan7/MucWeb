@@ -1,5 +1,5 @@
 <?php
-$configFile = __DIR__ . '../../config.json';
+$configFile = __DIR__ . '/config.json';
 $config = json_decode(file_get_contents($configFile), true);
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
